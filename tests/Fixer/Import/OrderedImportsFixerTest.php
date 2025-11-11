@@ -2020,6 +2020,18 @@ use function some\a\{fn_a, fn_b};
                 use Foo\November\{Juliett, Golf};
                 PHP,
         ];
+
+        yield 'with single group' => [
+            <<<'PHP'
+                <?php
+
+                use Contentful\{
+                    Delivery\Query
+                };
+
+                $query = new Query();
+                PHP,
+        ];
     }
 
     /**
